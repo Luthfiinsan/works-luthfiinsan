@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luthfi Khairul Insan | GIS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --text: #1a1a1a;
+      --accent: #0a84ff;
+      --card-bg: #ffffff;
+      --radius: 16px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      background: var(--card-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--accent); }
+
+    .hero {
+      padding: 100px 48px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .section {
+      padding: 80px 48px;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      margin-bottom: 32px;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .card p { opacity: 0.8; }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.7;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luthfi Insan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>GIS Analyst & Geospatial Developer</h2>
+    <p>Spesialis dalam analisis spasial, pemetaan digital, remote sensing, dan pengembangan solusi geospasial modern.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Saya Luthfi Khairul Insan, seorang GIS Analyst dengan pengalaman dalam analisis spasial, pemetaan, remote sensing, dan pemrosesan citra. Saya memiliki latar belakang pendidikan Geografi dan pengalaman profesional di berbagai proyek pemetaan, analisis keruangan, hingga pengembangan workflow otomatis menggunakan Python dan Google Earth Engine.</p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project Image" />
+        <h3>Judul Project 1</h3>
+        <p>Deskripsi singkat project.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project Image" />
+        <h3>Judul Project 2</h3>
+        <p>Deskripsi singkat project.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project Image" />
+        <h3>Judul Project 3</h3>
+        <p>Deskripsi singkat project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: luthfi@example.com</p>
+    <p>LinkedIn: linkedin.com/in/luthfi</p>
+    <p>GitHub: github.com/luthfi</p>
+  </section>
+
+  <footer>© 2025 Luthfi Khairul Insan. All rights reserved.</footer>
+</body>
+</html>
 
